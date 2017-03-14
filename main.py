@@ -1,19 +1,30 @@
 from random import randrange
 
-player1roll=randrange(1,6)
-player2roll=randrange(1,6)
+player1roll1=randrange(1,4)
+player1roll2=randrange(1,6)
+player1roll3=randrange(1,12)
+player1roll4=randrange(1,20)
+player2roll1=randrange(1,4)
+player2roll2=randrange(1,6)
+player2roll3=randrange(1,12)
+player2roll4=randrange(1,20)
 
 wincount=3
-player1score=0
-player2score=0
+player1score=player1roll1 + player1roll2 + player1roll3 + player1roll4
+player2score=player2roll1 + player2roll2 + player2roll3 + player2roll4 
 
 
 
 while(player1score != 3 and player2score != 3):
-    player1roll = randrange(1,6)
-    print(player1roll)
-    player2roll = randrange(1,6)
-    print(player2roll)
+    player1roll1 = randrange(1,4)
+    player1roll2 = randrange(1,6)
+    player1roll3 = randrange(1,12)
+    player1roll4 = randrange(1,20)
+    player2roll1 = randrange(1,4)
+    player2roll2 = randrange(1,6)
+    player2roll3 = randrange(1,12)
+    player2roll4 = randrange(1,20)
+    
     if(player1roll > player2roll):
 	    print("player1score")
             player1score = player1score + 1
