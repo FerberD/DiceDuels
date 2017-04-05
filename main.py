@@ -25,16 +25,27 @@ while(player1score != 3 and player2score != 3):
     player2roll3 = randrange(1,12)
     player2roll4 = randrange(1,20)
     
-    if(player1roll > player2roll):
-	    print("player1score")
-            player1score = player1score + 1
-            print(player1score)
-    if(player2roll > player1roll):
-	    print("player2score")
-            player2score = player2score + 1
-            print(player2score)
-    if(player1roll == player2roll):
-        print("tie")
+    if(player1roll1 > player2roll1):
+        player1score = player1score + 1
+    if(player2roll1 > player1roll1):
+	    player2score = player2score + 1
+
+    if(player1roll2 > player2roll2):
+    	player1score = player1score + 1
+    if(player2roll2 > player2roll2):
+    	player2score = player2core + 1
+
+    if(player1roll3 > player2roll3):
+    	player1score = player1score + 1
+    if(player2roll3 > player1roll3):
+        player2score = player2score + 1
+
+    if(player1roll4 > player2roll4):
+        player1score = player1score + 1
+    if(player2roll4 > player1roll4):
+        player2score = player2score + 1
+
+        
     if(player1score == 3):
     	print("PLAYER 1 WINS!")
     if(player2score == 3):
